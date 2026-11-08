@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>섬산책 | 제주 조천 신촌리 · 사계절 재료로 만든 빙수와 디저트</title>
+<meta name="description" content="제주 조천읍 신촌리 카페 섬산책. 사계절 재료를 활용한 빙수와 디저트. 신촌리 버스정류장 · 주유소 맞은편(CU 옆), 건물 주차장 이용 가능." />
+<link rel="canonical" href="https://seomsanchaek-sample.lgt3232.workers.dev/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:site_name" content="섬산책" />
+<meta property="og:title" content="섬산책 · 사계절 재료로 만든 빙수와 디저트" />
+<meta property="og:description" content="제주 조천읍 신촌리의 작은 빙수 가게." />
+<meta property="og:url" content="https://seomsanchaek-sample.lgt3232.workers.dev/" />
+<meta property="og:image" content="https://seomsanchaek-sample.lgt3232.workers.dev/og-seomsanchaek.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#FAF8F4" />
+<link rel="icon" href="favicon.png" type="image/png" />
+<link rel="preload" href="sm-gowun.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="sm-pretendard.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="sm-hero.webp" as="image" />
+<!-- 시안 도메인 = seomsanchaek-sample.lgt3232.workers.dev. 고객 인계 시 grep lgt3232 → canonical·og:url·og:image·JSON-LD url/image 치환 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "섬산책",
+  "url": "https://seomsanchaek-sample.lgt3232.workers.dev/",
+  "image": "https://seomsanchaek-sample.lgt3232.workers.dev/og-seomsanchaek.jpg",
+  "telephone": "+82-507-1378-1857",
+  "servesCuisine": "Bingsu, Dessert",
+  "address": { "@type": "PostalAddress", "streetAddress": "조천읍 신북로 75 1층", "addressLocality": "제주시", "addressRegion": "제주특별자치도", "addressCountry": "KR" },
+  "sameAs": ["https://www.instagram.com/seomsanchaek/"]
+}
+</script>
+<style>
+@font-face{ font-family:"SM Head"; font-weight:400; font-display:swap; src:url("sm-gowun.woff2") format("woff2"); }
+@font-face{ font-family:"SM Sans"; font-weight:400 700; font-display:swap; src:url("sm-pretendard.woff2") format("woff2"); }
+
+:root{
+  /* 흰 벽 + 원목 + 민트 문 (매장 실측) · 원목이 실제로 따뜻해 웜 예외 */
+  --paper:#FAF8F4;
+  --paper-2:#F1ECE4;
+  --ink:#2A2522;         /* 14.3:1 */
+  --soft:#655C55;        /* 6.2:1 · 띠 위 5.6:1 */
+  --wood:#8A5A36;        /* 원목 테이블 실측(189,131,83)을 어둡게 · 라벨 5.5:1 · 버튼 흰 글자 5.8:1 */
+  --mint:#BFE3DA;        /* 민트 문 실측(174,217,210)을 밝게 · 겨울방학 면 */
+  --mint-ink:#3E5F58;    /* 민트 위 작은 글자 5.1:1 */
+  --line:#E4DDD3;
+  --head:"SM Head","SM Sans",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --sans:"SM Sans",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --wrap:1120px;
+  --r:2px;
+}
+*,*::before,*::after{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; }
+body{ margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.8; word-break:keep-all; overflow-wrap:break-word; }
+img{ max-width:100%; height:auto; display:block; }
+a{ color:inherit; text-decoration:none; }
+h1,h2,h3,p{ margin:0; }
+:focus-visible{ outline:2px solid var(--wood); outline-offset:3px; }
+.wrap{ width:min(100% - 40px, var(--wrap)); margin:0 auto; }
+.sec{ padding:96px 0; }
+@media (min-width:900px){ .sec{ padding:136px 0; } }
+.alt{ background:var(--paper-2); }
+
+.label{ font-size:.8rem; font-weight:600; letter-spacing:.18em; color:var(--wood); }
+.h2{ margin-top:12px; font-family:var(--head); font-weight:400; font-size:clamp(1.9rem,4.6vw,2.8rem); line-height:1.4; }
+.desc{ margin-top:16px; max-width:30em; color:var(--soft); font-size:1.02rem; }
+
+.btn{ display:inline-flex; align-items:center; justify-content:center; min-height:50px; padding:0 24px; border:1.5px solid var(--ink); border-radius:var(--r); font-size:.95rem; font-weight:600; transition:background .2s ease, color .2s ease, transform .15s ease; }
+.btn.fill{ background:var(--wood); border-color:var(--wood); color:#fff; }
+.btn:active{ transform:scale(.98); }
+@media (hover:hover){ .btn:not(.fill):hover{ background:var(--ink); color:var(--paper); } .btn.fill:hover{ background:#6F4829; border-color:#6F4829; } }
+
+/* 헤더 */
+.site-head{ position:sticky; top:0; z-index:50; background:rgba(250,248,244,.96); border-bottom:1px solid var(--line); }
+.site-head .wrap{ display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:66px; }
+@media (min-width:900px){ .site-head .wrap{ display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); gap:24px; } .head-cta{ justify-self:end; } }
+.brand img{ height:50px; width:auto; }
+.nav{ display:none; gap:30px; font-size:.95rem; }
+@media (min-width:900px){ .nav{ display:flex; } }
+@media (hover:hover){ .nav a:hover{ color:var(--wood); } }
+.head-cta{ min-height:40px; padding:0 16px; font-size:.86rem; }
+@media (max-width:899px){ .head-cta{ display:none; } }
+
+/* 겨울방학 안내 띠 */
+.notice{ background:var(--mint); color:var(--ink); text-align:center; padding:11px 20px; font-size:.92rem; }
+.notice b{ font-weight:700; }
+
+/* 히어로 */
+.hero .wrap{ display:grid; gap:40px; padding:44px 0 80px; align-items:center; }
+@media (min-width:900px){ .hero .wrap{ grid-template-columns:minmax(0,5fr) minmax(0,6fr); gap:80px; padding:80px 0 120px; } }
+.hero .logo{ width:min(46%,190px); }
+.hero h1{ margin-top:36px; font-family:var(--head); font-weight:400; font-size:clamp(2rem,4.8vw,3rem); line-height:1.45; }
+.hero .lead{ margin-top:18px; max-width:25em; color:var(--soft); font-size:1.04rem; }
+.hero .cta{ display:flex; flex-wrap:wrap; gap:10px; margin-top:30px; }
+.hero figure{ margin:0; }
+.hero figure img{ width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:var(--r); }
+/* 모바일: 빙수 사진을 먼저(4:3), 로고는 작게 */
+@media (max-width:899px){ .hero .wrap{ gap:28px; padding:24px 0 72px; } .hero figure{ order:-1; } .hero figure img{ aspect-ratio:4/3; } .hero .logo{ width:96px; } .hero h1{ margin-top:22px; } }
+
+/* 사계절 */
+.seasons{ display:grid; gap:72px; margin-top:56px; }
+@media (min-width:900px){ .seasons{ gap:104px; margin-top:72px; } }
+.season{ display:grid; gap:20px; align-items:end; }
+@media (min-width:900px){ .season{ grid-template-columns:minmax(0,4fr) minmax(0,4fr) minmax(0,3fr); gap:28px; } .season.rev .text{ order:-1; } }
+.season figure{ margin:0; }
+.season img{ width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:var(--r); }
+.season .pair{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+@media (min-width:900px){ .season .pair{ display:contents; } }
+.season .text{ padding-bottom:6px; }
+.season .name{ font-family:var(--head); font-size:clamp(2.6rem,6vw,3.6rem); line-height:1; }
+.season .name small{ display:block; margin-top:10px; font-family:var(--sans); font-size:.78rem; font-weight:600; letter-spacing:.18em; color:var(--wood); }
+.season .what{ margin-top:18px; font-weight:600; }
+.season .text p.s{ margin-top:6px; color:var(--soft); font-size:.95rem; }
+/* 겨울: 민트 면 */
+.winter{ display:grid; gap:24px; align-items:center; padding:28px; background:var(--mint); border-radius:var(--r); }
+@media (min-width:900px){ .winter{ grid-template-columns:minmax(0,5fr) minmax(0,6fr); gap:48px; padding:40px; } }
+.winter img{ width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:var(--r); }
+.winter .name small{ color:var(--mint-ink); }
+.winter p.s{ color:var(--ink); }
+
+/* 한 그릇 한 잔 */
+.cups{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:48px; }
+@media (min-width:900px){ .cups{ grid-template-columns:repeat(6,minmax(0,1fr)); gap:16px; } }
+.cups img{ width:100%; aspect-ratio:3/4; object-fit:cover; border-radius:var(--r); }
+
+/* 공간 */
+.space{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:48px; }
+@media (min-width:900px){ .space{ grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; } .space figure:nth-child(even){ margin-top:56px; } }
+.space figure{ margin:0; }
+.space img{ width:100%; aspect-ratio:3/4; object-fit:cover; border-radius:var(--r); }
+
+/* 오시는 길 */
+.visit .wrap{ display:grid; gap:44px; }
+@media (min-width:900px){ .visit .wrap{ grid-template-columns:minmax(0,5fr) minmax(0,6fr); gap:72px; align-items:center; } }
+.info{ margin:28px 0 0; }
+.info div{ display:grid; grid-template-columns:72px minmax(0,1fr); gap:12px; padding:14px 0; border-top:1px solid var(--line); }
+.info div:last-child{ border-bottom:1px solid var(--line); }
+.info dt{ font-weight:700; }
+.info dd{ margin:0; color:var(--soft); }
+.info dd b{ color:var(--ink); font-weight:600; }
+.info dd small{ display:block; margin-top:3px; font-size:.88rem; }
+.visit .cta{ margin-top:24px; display:flex; flex-wrap:wrap; gap:10px; }
+.visit-right{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+.visit-right img{ width:100%; aspect-ratio:3/4; object-fit:cover; border-radius:var(--r); }
+.map{ width:100%; height:100%; min-height:260px; border:0; border-radius:var(--r); background:var(--paper); }
+
+/* 푸터 */
+.foot{ border-top:1px solid var(--line); text-align:center; padding:60px 0 calc(110px + env(safe-area-inset-bottom)); font-size:.88rem; color:var(--soft); }
+@media (min-width:900px){ .foot{ padding:72px 0; } }
+.foot img{ height:96px; width:auto; margin:0 auto 18px; }
+.foot p + p{ margin-top:6px; }
+.foot a{ text-decoration:underline; text-underline-offset:3px; }
+
+/* 모바일 하단 바 (불투명) */
+.quick{ position:fixed; left:0; right:0; bottom:0; z-index:60; display:grid; grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr); gap:6px; padding:8px 10px calc(8px + env(safe-area-inset-bottom)); background:var(--paper); border-top:1px solid var(--line); }
+.quick a{ display:flex; align-items:center; justify-content:center; min-height:48px; border:1.5px solid var(--ink); border-radius:var(--r); font-size:.9rem; font-weight:600; background:var(--paper); }
+.quick a.fill{ background:var(--wood); border-color:var(--wood); color:#fff; }
+@media (min-width:900px){ .quick{ display:none; } }
+
+/* 리빌: 사진 로드 후 페이드 (setInterval) */
+.js .reveal{ opacity:0; transform:translateY(14px); transition:opacity .7s ease, transform .7s ease; }
+.js .reveal.in{ opacity:1; transform:none; }
+@media print{ .js .reveal{ opacity:1; transform:none; } }
+</style>
+<noscript><style>.reveal{ opacity:1 !important; transform:none !important; }</style></noscript>
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<p class="notice"><b>11월 1일부터 겨울방학이에요.</b> 다시 여는 날은 인스타그램 공지를 확인해 주세요.</p>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="섬산책 처음으로"><img src="sm-logo.webp" alt="섬산책" width="516" height="697" /></a>
+    <nav class="nav" aria-label="주요 메뉴"><a href="#seasons">사계절</a><a href="#menu">메뉴</a><a href="#space">공간</a><a href="#visit">오시는 길</a></nav>
+    <a class="btn fill head-cta" href="https://map.naver.com/p/entry/place/2093067050" target="_blank" rel="noopener">네이버 길찾기</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="reveal">
+        <img class="logo" src="sm-logo.webp" alt="섬산책" width="516" height="697" />
+        <h1>섬을 걷다 들르는<br />작은 빙수 가게</h1>
+        <p class="lead">제주 조천 신촌리, 사계절 재료를 활용한 빙수와 디저트를 만들어요.</p>
+        <div class="cta">
+          <a class="btn fill" href="https://map.naver.com/p/entry/place/2093067050" target="_blank" rel="noopener">네이버 길찾기</a>
+          <a class="btn" href="https://www.instagram.com/seomsanchaek/" target="_blank" rel="noopener">인스타그램</a>
+        </div>
+      </div>
+      <figure class="reveal"><img src="sm-hero.webp" alt="레몬을 올린 흰 빙수 한 그릇" width="1100" height="1465" fetchpriority="high" /></figure>
+    </div>
+  </section>
+
+  <section class="sec alt" id="seasons" aria-labelledby="seasons-h">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="label">FOUR SEASONS</p>
+        <h2 id="seasons-h" class="h2">계절이 바뀌면<br />빙수도 바뀌어요</h2>
+        <p class="desc">그 계절에 나는 재료로 빙수와 디저트를 만듭니다.</p>
+      </div>
+      <div class="seasons">
+        <div class="season reveal">
+          <div class="pair">
+            <figure><img loading="lazy" src="sm-plum.webp" alt="상자 가득한 청매실을 한 손에 든 모습" width="900" height="1199" /></figure>
+            <figure><img loading="lazy" src="sm-syrup.webp" alt="청을 담근 큰 유리병 두 개" width="900" height="1199" /></figure>
+          </div>
+          <div class="text"><p class="name">봄<small>SPRING</small></p><p class="what">청매실 · 직접 담그는 청</p><p class="s">제철 열매를 고르고, 청을 담가요.</p></div>
+        </div>
+        <div class="season rev reveal">
+          <div class="pair">
+            <figure><img loading="lazy" src="sm-summer.webp" alt="수박, 블루베리, 옥수수, 복숭아" width="900" height="1199" /></figure>
+            <figure><img loading="lazy" src="sm-blueberry.webp" alt="블루베리 빙수와 수박 조각, 아이스티가 놓인 쟁반" width="900" height="1199" /></figure>
+          </div>
+          <div class="text"><p class="name">여름<small>SUMMER</small></p><p class="what">수박 · 블루베리 · 옥수수 · 복숭아</p><p class="s">한여름 과일을 얹은 빙수 한 그릇.</p></div>
+        </div>
+        <div class="season reveal">
+          <div class="pair">
+            <figure><img loading="lazy" src="sm-figfarm.webp" alt="잎이 무성한 무화과 밭" width="900" height="1536" /></figure>
+            <figure><img loading="lazy" src="sm-fig.webp" alt="무화과를 올린 빙수를 두 손으로 든 모습" width="900" height="1200" /></figure>
+          </div>
+          <div class="text"><p class="name">가을<small>AUTUMN</small></p><p class="what">무화과 · 밤</p><p class="s">익어 가는 열매를 빙수 위에 올려요.</p></div>
+        </div>
+        <div class="winter reveal">
+          <img loading="lazy" src="sm-sea.webp" alt="구름 낀 하늘 아래 조용한 제주 바다" width="945" height="1181" />
+          <div class="text"><p class="name">겨울<small>WINTER BREAK</small></p><p class="what">겨울방학</p><p class="s">11월 1일부터 겨울방학이에요. 다시 여는 날은 인스타그램 공지를 확인해 주세요.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="menu" aria-labelledby="menu-h">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="label">BINGSU &amp; DRINKS</p>
+        <h2 id="menu-h" class="h2">한 그릇, 한 잔</h2>
+        <p class="desc">빙수와 디저트, 그리고 곁들이는 음료. 메뉴는 계절에 따라 달라져요.</p>
+      </div>
+      <div class="cups">
+        <img class="reveal" loading="lazy" src="sm-bingsu.webp" alt="흰 그릇에 소복이 담긴 빙수" width="700" height="932" />
+        <img class="reveal" loading="lazy" src="sm-chestnut.webp" alt="밤 크림을 올린 빙수" width="900" height="1199" />
+        <img class="reveal" loading="lazy" src="sm-cake.webp" alt="고소한 가루를 곁들인 네모난 케이크" width="700" height="932" />
+        <img class="reveal" loading="lazy" src="sm-watermelon.webp" alt="수박 조각을 꽂은 수박주스" width="700" height="932" />
+        <img class="reveal" loading="lazy" src="sm-latte.webp" alt="원목 테이블 위 아이스 라떼" width="700" height="933" />
+        <img class="reveal" loading="lazy" src="sm-tea.webp" alt="손에 든 따뜻한 차 한 잔" width="700" height="932" />
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="space" aria-labelledby="space-h">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="label">THE ROOM</p>
+        <h2 id="space-h" class="h2">햇빛 드는 작은 자리</h2>
+        <p class="desc">원목 테이블과 민트색 문, 컵마다 꽂아 둔 꽃.</p>
+      </div>
+      <div class="space">
+        <figure class="reveal"><img loading="lazy" src="sm-window.webp" alt="햇빛이 드는 창가 원목 테이블과 의자" width="900" height="1199" /></figure>
+        <figure class="reveal"><img loading="lazy" src="sm-door.webp" alt="민트색 문과 원목 선반이 있는 실내" width="900" height="1200" /></figure>
+        <figure class="reveal"><img loading="lazy" src="sm-flowers.webp" alt="선반 위 컵마다 꽂힌 거베라 꽃" width="900" height="1199" /></figure>
+        <figure class="reveal"><img loading="lazy" src="sm-entry.webp" alt="꽃병이 놓인 원목 카운터와 나무 문" width="900" height="1199" /></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec visit" id="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="label">VISIT</p>
+        <h2 id="visit-h" class="h2">오시는 길</h2>
+        <dl class="info">
+          <div><dt>주소</dt><dd><b>제주 제주시 조천읍 신북로 75 1층</b><small>신촌리 버스정류장 · 주유소 바로 맞은편 (CU편의점 옆)</small></dd></div>
+          <div><dt>주차</dt><dd>건물 주차장 이용 가능</dd></div>
+          <div><dt>영업</dt><dd><b>매주 월요일 휴무</b><small>영업시간은 인스타그램 공지를 확인해 주세요 · 11월 1일부터 겨울방학</small></dd></div>
+          <div><dt>안내</dt><dd>반려동물은 함께할 수 없어요</dd></div>
+          <div><dt>전화</dt><dd><a href="tel:050713781857"><b>0507-1378-1857</b></a></dd></div>
+        </dl>
+        <div class="cta">
+          <a class="btn fill" href="https://map.naver.com/p/entry/place/2093067050" target="_blank" rel="noopener">네이버 길찾기</a>
+          <a class="btn" href="https://www.instagram.com/seomsanchaek/" target="_blank" rel="noopener">인스타그램</a>
+        </div>
+      </div>
+      <div class="visit-right reveal">
+        <img loading="lazy" src="sm-sign.webp" alt="회색 벽에 걸린 섬산책 간판" width="800" height="1066" />
+        <iframe class="map" title="섬산책 위치 지도" src="https://www.google.com/maps?q=%EC%A0%9C%EC%A3%BC%20%EC%A0%9C%EC%A3%BC%EC%8B%9C%20%EC%A1%B0%EC%B2%9C%EC%9D%8D%20%EC%8B%A0%EB%B6%81%EB%A1%9C%2075&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="sm-logo.webp" alt="" width="516" height="697" loading="lazy" />
+    <p>제주 제주시 조천읍 신북로 75 1층 · <a href="tel:050713781857">0507-1378-1857</a></p>
+    <p><a href="https://www.instagram.com/seomsanchaek/" target="_blank" rel="noopener">@seomsanchaek</a> · © 섬산책</p>
+  </div>
+</footer>
+
+<div class="quick" aria-label="빠른 연결">
+  <a class="fill" href="https://map.naver.com/p/entry/place/2093067050" target="_blank" rel="noopener">길찾기</a>
+  <a href="tel:050713781857">전화</a>
+  <a href="https://www.instagram.com/seomsanchaek/" target="_blank" rel="noopener">인스타</a>
+</div>
+
+<script>
+(function(){
+  /* 리빌: 사진 로드 후 페이드 + 폰트 준비 후 시작 */
+  function show(el){
+    if(el._wait) return;
+    var imgs=el.tagName==='IMG'?[el]:[].slice.call(el.querySelectorAll('img'));
+    var left=imgs.filter(function(i){ return !i.complete; });
+    if(!left.length){ el.classList.add('in'); return; }
+    el._wait=true; var n=left.length;
+    var fin=function(){ if(--n<=0) el.classList.add('in'); };
+    left.forEach(function(i){
+      if(i.loading==='lazy') i.loading='eager';
+      i.addEventListener('load',fin,{once:true}); i.addEventListener('error',fin,{once:true});
+    });
+    setTimeout(function(){ el.classList.add('in'); },2500);
+  }
+  var pending=[].slice.call(document.querySelectorAll('.reveal'));
+  function tick(){
+    if(!pending.length){ clearInterval(t); return; }
+    if(window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 4){
+      pending.forEach(show); pending=[]; return;
+    }
+    var line=window.innerHeight*0.92;
+    pending=pending.filter(function(el){
+      if(el.getBoundingClientRect().top < line){ show(el); return false; }
+      return true;
+    });
+  }
+  var t, started=false;
+  function start(){ if(started) return; started=true; tick(); t=setInterval(tick,120); }
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(start); }
+  setTimeout(start,1200);
+  /* 앵커 스크롤 */
+  var head=document.querySelector('.site-head');
+  [].forEach.call(document.querySelectorAll('a[href^="#"]'),function(a){
+    a.addEventListener('click',function(e){
+      var id=a.getAttribute('href'); var el=id==='#top'?document.body:document.querySelector(id);
+      if(!el) return; e.preventDefault();
+      var s0=window.pageYOffset, end=id==='#top'?0:el.getBoundingClientRect().top+s0-head.offsetHeight+1;
+      var t0=Date.now(), dur=560;
+      var iv=setInterval(function(){
+        var p=Math.min((Date.now()-t0)/dur,1), e2=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2;
+        window.scrollTo(0,s0+(end-s0)*e2);
+        if(p>=1) clearInterval(iv);
+      },16);
+    });
+  });
+})();
+</script>
+</body>
+</html>
