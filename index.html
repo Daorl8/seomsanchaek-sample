@@ -100,7 +100,7 @@ h1,h2,h3,p{ margin:0; }
 .hero figure{ margin:0; }
 .hero figure img{ width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:var(--r); }
 /* 모바일: 빙수 사진을 먼저(4:3), 로고는 작게 */
-@media (max-width:899px){ .hero .wrap{ gap:28px; padding:24px 0 72px; } .hero figure{ order:-1; } .hero figure img{ aspect-ratio:4/3; } .hero .logo{ width:96px; } .hero h1{ margin-top:22px; } }
+@media (max-width:899px){ .hero .wrap{ gap:28px; padding:24px 0 72px; } .hero figure{ order:-1; } .hero figure img{ aspect-ratio:4/3; } .hero .logo{ display:none; } .hero h1{ margin-top:0; } }
 
 /* 사계절 */
 .seasons{ display:grid; gap:72px; margin-top:56px; }
@@ -112,10 +112,11 @@ h1,h2,h3,p{ margin:0; }
 .season .pair{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
 @media (min-width:900px){ .season .pair{ display:contents; } }
 .season .text{ padding-bottom:6px; }
-.season .name{ font-family:var(--head); font-size:clamp(2.6rem,6vw,3.6rem); line-height:1; }
-.season .name small{ display:block; margin-top:10px; font-family:var(--sans); font-size:.78rem; font-weight:600; letter-spacing:.18em; color:var(--wood); }
-.season .what{ margin-top:18px; font-weight:600; }
-.season .text p.s{ margin-top:6px; color:var(--soft); font-size:.95rem; }
+/* 제목 스타일은 계절 카드 + 겨울 카드 공통 (v0.1.2: 겨울 카드 누락 수정) */
+.season .name, .winter .name{ font-family:var(--head); font-size:clamp(2.6rem,6vw,3.6rem); line-height:1; }
+.season .name small, .winter .name small{ display:block; margin-top:10px; font-family:var(--sans); font-size:.78rem; font-weight:600; letter-spacing:.18em; color:var(--wood); }
+.season .what, .winter .what{ margin-top:18px; font-weight:600; }
+.season .text p.s, .winter .text p.s{ margin-top:6px; color:var(--soft); font-size:.95rem; }
 /* 겨울: 민트 면 */
 .winter{ display:grid; gap:24px; align-items:center; padding:28px; background:var(--mint); border-radius:var(--r); }
 @media (min-width:900px){ .winter{ grid-template-columns:minmax(0,5fr) minmax(0,6fr); gap:48px; padding:40px; } }
@@ -144,6 +145,7 @@ h1,h2,h3,p{ margin:0; }
 .info dd{ margin:0; color:var(--soft); }
 .info dd b{ color:var(--ink); font-weight:600; }
 .info dd small{ display:block; margin-top:3px; font-size:.88rem; }
+.nw{ white-space:nowrap; }
 .visit .cta{ margin-top:24px; display:flex; flex-wrap:wrap; gap:10px; }
 .visit-right{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
 .visit-right img{ width:100%; aspect-ratio:3/4; object-fit:cover; border-radius:var(--r); }
@@ -186,7 +188,7 @@ h1,h2,h3,p{ margin:0; }
     <div class="wrap">
       <div class="reveal">
         <img class="logo" src="sm-logo.webp" alt="섬산책" width="516" height="697" />
-        <h1>계절을 담은<br />한그릇을 소개합니다</h1>
+        <h1>계절을 담은<br />한 그릇을 소개합니다</h1>
         <p class="lead">제주 조천 신촌리, 사계절 재료를 활용한 빙수와 디저트를 만들어요.</p>
         <div class="cta">
           <a class="btn fill" href="https://map.naver.com/p/entry/place/2093067050" target="_blank" rel="noopener">네이버 길찾기</a>
@@ -201,9 +203,7 @@ h1,h2,h3,p{ margin:0; }
     <div class="wrap">
       <div class="reveal">
         <p class="label">FOUR SEASONS</p>
-        <h2 id="seasons-h" class="h2">제철 재료로 빙수를 만듭니다</h2>
-        <p class="desc">그 계절에 나는 재료로 빙수와 디저트를 만듭니다.</p>
-      </div>
+        <h2 id="seasons-h" class="h2">제철 재료로 빙수를 만듭니다</h2>      </div>
       <div class="seasons">
         <div class="season reveal">
           <div class="pair">
@@ -274,7 +274,7 @@ h1,h2,h3,p{ margin:0; }
         <p class="label">VISIT</p>
         <h2 id="visit-h" class="h2">오시는 길</h2>
         <dl class="info">
-          <div><dt>주소</dt><dd><b>제주 제주시 조천읍 신북로 75 1층</b><small>신촌리 버스정류장 · 주유소 바로 맞은편 (CU편의점 옆)</small></dd></div>
+          <div><dt>주소</dt><dd><b>제주 제주시 조천읍 신북로 75 1층</b><small>신촌리 버스정류장 · 주유소 바로 맞은편 <span class="nw">(CU편의점 옆)</span></small></dd></div>
           <div><dt>주차</dt><dd>건물 주차장 이용 가능</dd></div>
           <div><dt>영업</dt><dd><b>매주 월요일 휴무</b><small>영업시간은 인스타그램 공지를 확인해 주세요 · 11월 1일부터 겨울방학</small></dd></div>
           <div><dt>안내</dt><dd>반려동물은 함께할 수 없어요</dd></div>
